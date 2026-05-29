@@ -1,0 +1,190 @@
+#tsparticles {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background: black;
+}
+
+.content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    gap: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.card {
+    width: 1100px;
+    display: flex;
+    gap: 40px;
+
+    padding: 40px;
+
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.1);
+}
+
+.card-lavori {
+    width: 1100px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    padding: 40px;
+
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.1);
+}
+
+.card-lavori h1{
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #fbfbfb;
+}
+
+.card-lavori p{
+   color: gray;
+}
+
+/* LEFT */
+.left {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    border: 3px solid rgb(255, 255, 255);
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.left h2 {
+    margin-top: 15px;
+    color: white;
+}
+
+.left p {
+    color: gray;
+}
+
+/* RIGHT */
+.right {
+    width: 65%;
+    color: white;
+}
+
+.right h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.right p {
+    color: #b0b0b0;
+    line-height: 1.6;
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.buttons a {
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    text-decoration: none;
+    color: white;
+
+    background: rgba(0, 255, 255, 0.15);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+
+    transition: 0.3s;
+}
+
+.buttons a:hover {
+    background: rgb(248, 250, 250);
+    color: black;
+}
+
+@media (max-width: 768px) {
+
+    .card {
+        flex-direction: column;
+        width: 90%;
+        padding: 25px;
+        text-align: center;
+    }
+
+    .card-lavori {
+        flex-direction: column;
+        width: 90%;
+        padding: 25px;
+        text-align: center;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .right h1 {
+        font-size: 24px;
+    }
+
+    .buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}
+
+.project-media video {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.project-media-mobile{
+    text-align: center;
+}
+
+.project-media-mobile video {
+    
+    height: 500px;
+    width: 200px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
