@@ -142,16 +142,23 @@ body {
 
 @media (max-width: 768px) {
 
+    .top-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    }
+
     .card {
         flex-direction: column;
-        width: 90%;
+        width: 75%;
         padding: 25px;
         text-align: center;
     }
 
     .card-lavori {
         flex-direction: column;
-        width: 90%;
+        width: 75%;
         padding: 25px;
         text-align: center;
     }
